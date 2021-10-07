@@ -21,7 +21,20 @@
 
         <div class="tab-content">
             <div id="js" data-tab-content class='active'>
-                <p class="snippet">index.setSettings({attributesForFaceting: [ 'price','size', 'gender']})</p>
+                <p class="snippet">index.setSettings({
+                    <br>
+                    &nbsp;&nbsp;<span class="green-word">attributesForFaceting</span>: [ 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'price'</span>,
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'size'</span>,
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'gender'</span>
+                    <br>
+                    &nbsp;&nbsp;]
+                    <br>
+                    })
+                </p>
             </div>
             <div id="ruby" data-tab-content>
                 <p class="snippet">index.<span class="red-word">set_settings</span>({
@@ -33,7 +46,20 @@
                     <br>})</p>
             </div>
             <div id="python" data-tab-content>
-                <p class="snippet">index.set_settings({'attributesForFaceting': [ 'price', 'size','gender']})</p>
+                <p class="snippet">index.set_settings({
+                    <br>
+                    &nbsp;&nbsp; <span class="red-word">'attributesForFaceting'</span>: [ 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'price'</span>, 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span>'size'</span>,
+                    <br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'gender'</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;]
+                    <br>
+                    })
+                </p>
             </div>
             <div id="php" data-tab-content>
                 <p class="snippet"><span class="green-word">$index</span>-><span class="red-word">setSettings</span> ([

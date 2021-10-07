@@ -42,10 +42,13 @@ body {
 .tab-content {
     margin-left: 20px;
     margin-right: 20px;
+    justify-content: center;
     /* border-top: 1px solid #dee2e6; */
 }
 
 .snippet {
+    height: 400px;
+    /* width: 100%; */
     background-color: #f5f5fa;
     margin: 80px;
     margin-top: 16px;
