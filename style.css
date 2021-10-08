@@ -69,3 +69,15 @@ body {
 .purple-word {
     color: #990073;
 }
+
+.yellow-word {
+    color: #a19b4f;
+}
+
+.blue-word {
+    color:#6a95ac;
+}
+
+.grey_word {
+    color:rgba(175, 167, 167, 1);
+}

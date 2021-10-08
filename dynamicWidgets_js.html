@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+        <title>DynamicWidgets | html file</title>
+    </head>
+    <body>
+        <div class="tab-content snippet">
+            <p>
+                <span class="blue-word">search</span>.<span class="yellow-word">addWidgets</span>([
+                    <br>    
+                    &nbsp;&nbsp;<span class="blue-word">instantsearch</span>.<span class="blue-word">widgets</span>.<span class="yellow-word">dynamicWidgeys</span>({
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-word">container</span>: <span class="red-word">'#dynamic-widgets'</span>,&nbsp;<span class="grey-word">// CSS Selector</span>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-word">widgets</span>: [
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-word">container =></span>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-word">instantsearch</span>.<span class="blue-word">widgets</span>.<span class="yellow-word">refinementList</span>({ <span class="blue-word">container</span>, <span class="blue-word">attribute</span>: <span class="red-word">'gender'</span> }),
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-word">container =></span>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-word">instantsearch</span>.<span class="blue-word">widgets</span>.<span class="yellow-word">refinementList</span>({ <span class="blue-word">container</span>, <span class="blue-word">attribute</span>: <span class="red-word">'size'</span> }),
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-word">container =></span>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue-word">instantsearch</span>.<span class="blue-word">widgets</span>.<span class="yellow-word">refinementList</span>({ <span class="blue-word">container</span>, <span class="blue-word">attribute</span>: <span class="red-word">'price'</span> })
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;]
+                    <br>
+                    &nbsp;&nbsp;})
+                <br>
+                ]);
+            </p>
+        </div>
+    </body>
+</html>
