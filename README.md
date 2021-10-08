@@ -1,5 +1,5 @@
-# Tab app - Attributes for faceting
-Mini app to display content in tab 
+# Tab app with router in vanilla js
+Mini app to display content in tab + router behaviour
 
 - hosted on Netlify :
 https://reverent-tereshkova-22330c.netlify.app/
