@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="script.js" defer ></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+        <title>Attributes For Faceting</title>
+    </head>
+    <body>
+        <ul class="tabs">
+            <li data-tab-target="#js" class="active tab"> JavaScript</li>
+            <li data-tab-target="#ruby" class="tab">Ruby</li>
+            <li data-tab-target="#python" class="tab">Python</li>
+            <li data-tab-target="#php" class="tab">PHP</li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="js" data-tab-content class='active'>
+                <p class="snippet">index.setSettings({
+                    <br>
+                    &nbsp;&nbsp;<span class="green-word">attributesForFaceting</span>: [ 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'price'</span>,
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'size'</span>,
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'gender'</span>
+                    <br>
+                    &nbsp;&nbsp;]
+                    <br>
+                    });
+                </p>
+            </div>
+            <div id="ruby" data-tab-content>
+                <p class="snippet">index.<span class="red-word">set_settings</span>({
+                    <br>&nbsp;&nbsp;<span class="purple-word">attributesForFaceting:</span>[
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'price'</span>,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'size'</span>,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'gender'</span>
+                    <br>&nbsp;&nbsp;]
+                    <br>})</p>
+            </div>
+            <div id="python" data-tab-content>
+                <p class="snippet">index.set_settings({
+                    <br>
+                    &nbsp;&nbsp;<span class="red-word">'attributesForFaceting'</span>: [ 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'price'</span>, 
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'size'</span>,
+                    <br> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'gender'</span>
+                    <br>
+                    &nbsp;&nbsp;]
+                    <br>
+                    })
+                </p>
+            </div>
+            <div id="php" data-tab-content>
+                <p class="snippet"><span class="green-word">$index</span>-><span class="red-word">setSettings</span> ([
+                    <br>&nbsp;&nbsp;<span class="red-word">'attributesForFaceting'</span> => [ 
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'price'</span>,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'size'</span>,
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'gender'</span>
+                    <br>
+                    &nbsp;&nbsp;]
+                    <br>
+                    ]);</p>
+            </div>
+        </div>
+    </body>
+</html>
