@@ -2,7 +2,12 @@
 Mini app to display content in tab + router behaviour
 
 - hosted on Netlify :
-https://reverent-tereshkova-22330c.netlify.app/
+https://algolia-facets-course.netlify.app/attributesForFaceting
+https://algolia-facets-course.netlify.app/renderingContent_values
+https://algolia-facets-course.netlify.app/renderingContent_facets
+https://algolia-facets-course.netlify.app/dynamicwidgets_html
+https://algolia-facets-course.netlify.app/dynamicwidgets_js
+
 
 - Created for Education Team
 
