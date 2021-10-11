@@ -17,7 +17,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
+    /* border-bottom: 1px solid red;     */
 }
 
 .tab {
@@ -28,10 +28,16 @@ body {
     border: 1px solid #dee2e6;
 }
 
+#spare_tab {
+    width: 100%;
+    border: 1px solid #dee2e6;
+}
+
 .tab.active {
     /* background-color: #CCC; */
     color: #010d1a;
     border-bottom: none;
+    /* margin-bottom: -1px; */
 }
 
 .tab:hover {
