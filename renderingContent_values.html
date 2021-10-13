@@ -42,7 +42,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green-word">order</span>: [  
                     <span class="red-word">'S'</span>, <span class="red-word">'M'</span>, <span class="red-word">'L'</span>, <span class="red-word">'XL'</span>],
                     <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green-word">sortRemainingBy</span>: <span class="red-word">hiddent</span>,
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="green-word">sortRemainingBy</span>: <span class="red-word">'hidden'</span>,
                     <br>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
                     <br>
@@ -60,33 +60,34 @@
                     <span class="green-word">$index</span>-><span class="red-word">setSettings</span>([
                         <br>
                         &nbsp;&nbsp;<span class="red-word">'renderingContent'</span> => [
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'facetOrdering'</span> => [
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'facets'</span> => [
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'order'</span> => [
-                        <span class="red-word">'gender'</span>, <span class="red-word">'size'</span>, <span class="red-word">'price'</span> ]
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'values'</span> => [
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'size'</span> => [
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'order'</span> => [
-                        <span class="red-word">'S'</span>, <span class="red-word">'M'</span>, <span class="red-word">'L'</span>, <span class="red-word">'XL'</span>],
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'sortRemainingBy</span> => <span class="red-word">'hidden'</span>
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;]
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'facetOrdering'</span> => [
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'facets'</span> => [
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'order'</span> => [
+                                    <span class="red-word">'gender'</span>, <span class="red-word">'size'</span>, <span class="red-word">'price'</span> ]
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'values'</span> => [
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'size'</span> => [
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'order'</span> => [
+                                        <span class="red-word">'S'</span>, <span class="red-word">'M'</span>, <span class="red-word">'L'</span>, <span class="red-word">'XL'</span>],
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">'sortRemainingBy</span> => <span class="red-word">'hidden'</span>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;]
                         <br>
                         &nbsp;&nbsp;]
-                        <br>
-                        ]);
+                    <br>
+                    ]);
                 </p>
             </div>
             <div id="ruby" data-tab-content>
@@ -94,69 +95,68 @@
                     index.<span class ="red-word">set_settings</span>({
                         <br>
                         &nbsp;&nbsp;<span class="purple-word">renderingContent</span>: {
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">facetOrdering</span>: {
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">facets</span>: {
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">order</span>: [ 
-                        <span class="red-word">'gender'</span>, <span class="red-word">'size'</span>, <span class="red-word">'price'</span> ]
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}, 
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">values</span>: {
-                        <br>
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">size</span>: {
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">order</span>: [ 
-                        <span class="red-word">'S'</span>, <span class="red-word">'M'</span>, <span class="red-word">'L'</span>, <span class="red-word">'XL'</span> ],
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">sortRemainingBy</span>: <span class="red-word">'hidden'</span> 
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;}
-                        <br>
-                        &nbsp;&nbsp;}
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">facetOrdering</span>: {
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">facets</span>: {
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">order</span>: [ 
+                                    <span class="red-word">'gender'</span>, <span class="red-word">'size'</span>, <span class="red-word">'price'</span> ]
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}, 
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">values</span>: {
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">size</span>: {
+                                            <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">order</span>: [ 
+                                            <span class="red-word">'S'</span>, <span class="red-word">'M'</span>, <span class="red-word">'L'</span>, <span class="red-word">'XL'</span> ],
+                                            <br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="purple-word">sortRemainingBy</span>: <span class="red-word">'hidden'</span> 
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;}
+                            <br>
+                            &nbsp;&nbsp;}
                         <br>
                         })
                 </p>
             </div>
             <div id="python" data-tab-content>
                 <p class="snippet">
-                    index.set_settings(
+                    index.set_settings({
                         <br>
                         &nbsp;&nbsp;<span class="red-word">'renderingContent'</span>: {
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">facetOrdering</span>: {
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">facets</span>: {
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">order</span>: [ 
+                                    <span class="red-word">'gender'</span>, <span class="red-word">'size'</span>, <span class="red-word">'price'</span> ],
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">values</span>: {
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">size</span>: {
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">order</span>: [ <span class="red-word">'S'</span>,<span class="red-word">'M'</span>, <span class="red-word">'L'</span>, <span class="red-word">'XL'</span>],
+                                        <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">sortRemainingBy</span>: <span class="red-word">'hidden'</span>,
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;},
                         <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">facetOrdering</span>: {
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">facets</span>: {
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">order</span>: [ 
-                        <span class="red-word">'gender'</span>, <span class="red-word">'size'</span>, <span class="red-word">'price'</span> ],
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">values</span>: {
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">size</span>: {
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">order</span>: [ <span class="red-word">'S'</span>,<span class="red-word">'M'</span>, <span class="red-word">'L'</span>, <span class="red-word">'XL'</span>],
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">sortRemainingBy</span>: <span class="red-word">'hidden'</span>,
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;},
-                        <br>
-                        &nbsp;&nbsp;}
-                        <br>
-                        )
+                        &nbsp;&nbsp;},
+                    <br>
+                    })
                 </p>
             </div>
         </div>
