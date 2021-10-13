@@ -14,9 +14,9 @@
     <body>
         <ul class="tabs">
             <li data-tab-target="#js" class="active tab"> JavaScript</li>
+            <li data-tab-target="#php" class="tab">PHP</li>
             <li data-tab-target="#ruby" class="tab">Ruby</li>
             <li data-tab-target="#python" class="tab">Python</li>
-            <li data-tab-target="#php" class="tab">PHP</li>
             <li id="spare_tab"></li>
         </ul>
 
@@ -40,6 +40,27 @@
                     &nbsp;&nbsp;}
                     <br>
                 });                    
+                </p>
+            </div>
+            <div id="php" data-tab-content>
+                <p class="snippet">
+                    <span class="green-word">$index</span>-><span class="red-word">setSettings</span>([
+                        <br>
+                        &nbsp;&nbsp;<span class="red-word">'renderingContent'</span> => [
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">facetOrdering</span> => [
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">facets</span> => [
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">order</span> => [
+                        <span class="red-word">'gender'</span>, <span class="red-word">'size'</span>, <span class="red-word">'price'</span> ]
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;]
+                        <br>
+                        &nbsp;&nbsp;]
+                    ]);
                 </p>
             </div>
             <div id="ruby" data-tab-content>
@@ -82,27 +103,6 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;},
                         <br>
                     })
-                </p>
-            </div>
-            <div id="php" data-tab-content>
-                <p class="snippet">
-                    <span class="green-word">$index</span>-><span class="red-word">setSettings</span>([
-                        <br>
-                        &nbsp;&nbsp;<span class="red-word">'renderingContent'</span> => [
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">facetOrdering</span> => [
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">facets</span> => [
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">order</span> => [
-                        <span class="red-word">'gender'</span>, <span class="red-word">'size'</span>, <span class="red-word">'price'</span> ]
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;]
-                        <br>
-                        &nbsp;&nbsp;]
-                    ]);
                 </p>
             </div>
         </div>
