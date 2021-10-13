@@ -60,6 +60,7 @@
                         &nbsp;&nbsp;&nbsp;&nbsp;]
                         <br>
                         &nbsp;&nbsp;]
+                    <br>
                     ]);
                 </p>
             </div>
@@ -87,21 +88,23 @@
             </div>
             <div id="python" data-tab-content>
                 <p class="snippet">
-                    index.set_settings(
+                    index.set_settings({
                         <br>
                         &nbsp;&nbsp;<span class="red-word">'renderingContent'</span>: {
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">facetOrdering</span>: {
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">facets</span>: {
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">order</span>: [ 
+                                    <span class="red-word">'gender'</span>, <span class="red-word">'size'</span>, <span class="red-word">'price'</span> ],
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;},
                         <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">facetOrdering</span>: {
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">facets</span>: {
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red-word">order</span>: [ 
-                        <span class="red-word">'gender'</span>, <span class="red-word">'size'</span>, <span class="red-word">'price'</span> ],
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;},
-                        <br>
+                        &nbsp;&nbsp;},
+                    <br>
                     })
                 </p>
             </div>
